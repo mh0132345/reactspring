@@ -1,0 +1,14 @@
+language: java
+jdk:
+	- oraclejdk8
+addons:
+  postgresql: "9.4"
+sudo: required
+services:
+  - postgresql
+before_install:
+  - chmod +x mvnw
+  - psql -c "CREATE DATABASE testing_db;" -U postgres
+branches:
+	only:
+  - test
