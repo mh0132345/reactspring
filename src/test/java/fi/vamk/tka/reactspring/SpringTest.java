@@ -25,7 +25,7 @@ public class SpringTest{
 
         Group found = repository.findByName(mygroup.getName());
         assertEquals(found.getName(), mygroup.getName());
-		repository. delete(found);   
+		repository.delete(found);   
     }
     
     @Test
