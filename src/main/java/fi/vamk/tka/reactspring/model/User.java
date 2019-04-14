@@ -11,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 //@RequiredArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "user_entity")
 public class User {
     @Id
     private String name;
